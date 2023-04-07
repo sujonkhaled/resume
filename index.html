@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Khaled Mahmud Sujon - Resume</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+     <script>
+        
+const navLinks = document.querySelectorAll('.navigation li a');
+
+// Add an event listener to each navigation link
+navLinks.forEach(link => {
+  link.addEventListener('click', scrollToSection);
+});
+
+// Function to scroll to the corresponding section when a navigation link is clicked
+function scrollToSection(event) {
+  event.preventDefault(); // Prevent the default link behavior
+  const targetId = this.getAttribute('href'); // Get the ID of the target section
+  const targetSection = document.querySelector(targetId); // Select the target section
+  targetSection.scrollIntoView({ behavior: 'smooth' }); // Scroll to the target section smoothly
+}
+
+     </script>
+</head>
+
+<body>
+	<header>
+		<img src="khaled.png" alt="Khaled Mahmud Sujon" class="profile-picture">
+		<h1>Khaled Mahmud Sujon</h1>
+		<h2>Teacher | Student | Web Developer</h2>
+		<nav>
+			<ul class="navigation">
+				<li><a href="contact.html"> Ask ME </a></li>
+				<li><a href="hobbies.html">Hobbies</a></li>
+				<li><a href="skills.html">Skills</a></li>
+				<li><a href="award.html">Award</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section>
+			<h3>Education</h3>
+			<ul>
+				<li><strong>University of  Teknology Malaysia </strong> - Bachelor of  Computer Science Software Engineering  (Expected Graduation: 2024)</li>
+				<li><strong> Notre Dame college  </strong> -  Higher secondary  (Graduated: 2017)</li>
+			</ul>
+		</section>
+		<section>
+			<h3>Experience</h3>
+			<ul>
+				<li><strong> Lecturer </strong> - Sri Bintang Education</li>
+				<li><strong>Web Developer Intern</strong> science hub (Summer 2021)</li>
+				<li><strong> Lecturer </strong> -  UDVASH  (2018-2021)</li>
+			</ul>
+		</section>
+		<section>
+			<h3>Skills</h3>
+			<ul>
+				<li>Programming Languages: C++ , Java, Python, JavaScript, HTML/CSS</li>
+				<li>Web Development: React, Node.js, Express, MongoDB, PHP , LARAVEL ,MY SQL </li>
+				<li>Other Skills: Project Management, Teamwork, Communication</li>
+			</ul>
+		</section>
+	</main>
+	<footer>
+		<p>Contact Me :</p>
+        <p>Github: <a href="https://github.com/sujonkhaled">Click me to see my projects</a> </p>
+        <p> <label>Email :</label><a href="mailto:khaledsujon66@gmail.com">khaledsujon66@gmail.com</a></p>
+        <p><label>Phone :</label><a href="tel:+601163875198">+601163875198</a></p>
+	</footer>
+	 
+</body>
+</html>
